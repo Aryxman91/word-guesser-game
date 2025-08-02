@@ -1,8 +1,8 @@
-﻿# Word Guesser Game
+Word Guesser Game
 
- import random
+    import random
 
-def play_game():
+    def play_game():
     word_bank = ["matcha", "labubu", "loveisland", "huzz", "tuff"]
     word = random.choice(word_bank)
     guessed_word = ['_'] * len(word)
@@ -34,11 +34,12 @@ def play_game():
     if '_' in guessed_word:
         print('\n💀 You\'ve run out of attempts! The word was: ' + word)
 
-while True:
+    while True:
     play_game()
     again = input("\n🔁 Do you want to play again? (y✅/n❌): ").strip().lower()
     if again != 'yes':
         print("👋 Thanks for playing!")
         break
+
 
 
