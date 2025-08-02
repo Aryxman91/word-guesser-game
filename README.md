@@ -3,7 +3,10 @@ Word Guesser Game
     import random
 
     def play_game():
-    word_bank = ["matcha", "labubu", "loveisland", "huzz", "tuff"]
+    word_bank = ["_", "_", "_", "_", "_"]
+    
+    #enter random words in the empty spaces
+    
     word = random.choice(word_bank)
     guessed_word = ['_'] * len(word)
     attempts = 10
@@ -42,4 +45,6 @@ Word Guesser Game
         break
 
 
+a basic beginner python project 
+word guessing game 
 
